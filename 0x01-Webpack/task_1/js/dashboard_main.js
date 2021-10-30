@@ -16,5 +16,5 @@ function updateCounter() {
   });
 }
 
-_.debounce(updateCounter);
+_.debounce(updateCounter, 1000);
 updateCounter();
