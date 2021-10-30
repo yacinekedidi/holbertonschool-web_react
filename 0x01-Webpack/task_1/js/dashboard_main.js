@@ -12,7 +12,7 @@ function updateCounter() {
   const btn = $('button');
   btn.on('click', () => {
     count++;
-    $('p#count').html(`${count} clicks on the button`);
+    $('p#count').text(`${count} clicks on the button`);
   });
 }
 
