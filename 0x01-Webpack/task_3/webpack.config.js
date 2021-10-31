@@ -17,9 +17,8 @@ module.exports = {
   ],
   devtool: 'inline-source-map',
   devServer: {
-    static: {
-      directory: 'public',
-    },
+    // static: 'public',
+    contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 8564,
   },
