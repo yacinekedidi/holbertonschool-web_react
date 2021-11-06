@@ -3,10 +3,10 @@
   padding: 1rem;
 }
 
-[data-priority='default'] {
+[data-priority="default"] {
   color: blue;
 }
 
-[data-priority='urgent'] {
+[data-priority="urgent"] {
   color: red;
 }
