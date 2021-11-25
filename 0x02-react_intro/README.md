@@ -1,1 +1,1 @@
-# 0x02-react_intro 
+# 0x02-react_introo
