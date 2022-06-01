@@ -125,10 +125,13 @@ describe("TEST SUIT3:", () => {
       const wrapper = shallow(
         <Notifications listNotifications={listNotifications} />
       );
-      const shouldUpdate = wrapper
-        .instance()
-        .shouldComponentUpdate({ listNotifications: listNotifications });
-      expect(shouldUpdate).toBe(false);
+      const shouldUpdate = jest.spyOn(
+        Notifications.prototype,
+        "shouldComponentUpdate"
+      );
+      wrapper.setProps({ listNotifications: listNotifications });
+      expect(shouldUpdate).toHaveBeenCalled();
+      expect(shouldUpdate).toHaveLastReturnedWith(false);
     });
 
     it("TEST CASE 2:verify that when updating the props of the component with a longer list,\
@@ -136,10 +139,13 @@ describe("TEST SUIT3:", () => {
       //
       const wrapper = shallow(<Notifications listNotifications={[]} />);
 
-      const shouldUpdate = wrapper
-        .instance()
-        .shouldComponentUpdate({ listNotifications: listNotifications });
-      expect(shouldUpdate).toBe(true);
+      const shouldUpdate = jest.spyOn(
+        Notifications.prototype,
+        "shouldComponentUpdate"
+      );
+      wrapper.setProps({ listNotifications: listNotifications });
+      expect(shouldUpdate).toHaveBeenCalled();
+      expect(shouldUpdate).toHaveLastReturnedWith(true);
     });
   });
 });
