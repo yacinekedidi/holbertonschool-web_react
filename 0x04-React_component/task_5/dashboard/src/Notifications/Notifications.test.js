@@ -119,6 +119,10 @@ describe("TEST SUIT3:", () => {
       { id: 4, type: "default", value: "New love arc available" },
     ];
 
+    afterEach(() => {
+      jest.restoreAllMocks();
+    });
+
     it("TEST CASE 1: verify that when updating the props of the component with the same list,\
     the component doesn’t rerender", () => {
       //
