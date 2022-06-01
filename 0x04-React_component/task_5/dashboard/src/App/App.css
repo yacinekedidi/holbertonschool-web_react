@@ -1,0 +1,17 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header-with-notif {
+  display: flex;
+  outline: slid;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--main-color);
+}

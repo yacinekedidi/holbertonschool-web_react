@@ -1,0 +1,19 @@
+.Notifications {
+  border: 3px dotted crimson;
+  padding: 1rem;
+}
+
+[data-priority="default"] {
+  color: blue;
+}
+
+[data-priority="urgent"] {
+  color: red;
+}
+
+.menuItem {
+  text-align: right;
+}
+/* .notif-container {
+  outline: solid;
+} */
