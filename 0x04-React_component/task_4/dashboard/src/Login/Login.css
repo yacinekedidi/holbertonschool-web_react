@@ -1,0 +1,23 @@
+.App-body {
+  height: 60vh;
+  padding: 3rem;
+}
+
+.App-body p {
+  font-size: 1.5rem;
+}
+
+.App-body label {
+  font-weight: 550;
+}
+
+.App-body input {
+  margin: 0 1rem;
+}
+
+.App-body button {
+  background: white;
+  border: 2px ridge;
+  cursor: pointer;
+  border-radius: 5px;
+}
