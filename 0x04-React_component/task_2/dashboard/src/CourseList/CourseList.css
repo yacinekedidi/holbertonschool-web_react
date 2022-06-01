@@ -1,0 +1,18 @@
+table {
+  margin: 3rem;
+}
+
+table,
+thead,
+th[colspan="2"] {
+  border-collapse: collapse;
+  border: 1px ridge;
+}
+
+thead {
+  text-align: left;
+}
+
+th[colspan="2"] {
+  text-align: center;
+}
