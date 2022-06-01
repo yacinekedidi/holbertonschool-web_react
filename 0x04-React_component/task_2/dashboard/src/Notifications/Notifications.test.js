@@ -93,7 +93,6 @@ describe("TEST SUIT3:", () => {
     });
     it("TEST CASE1: ", () => {
       //
-      const mockedLog = jest.spyOn(global.console, "log");
       const wrapper = shallow(
         <Notifications
           listNotifications={listNotifications}
@@ -101,15 +100,14 @@ describe("TEST SUIT3:", () => {
         />
       );
 
+      console.log = jest.fn();
       const reactInstance = wrapper.instance();
-      const id = 2;
-      const mockedmarkAsRead = reactInstance.markAsRead;
 
-      expect(mockedmarkAsRead).toHaveBeenCalledOnce;
-      expect(mockedLog);
-      // expect(mockedLog).toHaveBeenCalledWith(
-      //   `Notification ${id} has been marked as read`
-      // );
+      const id = 2;
+      reactInstance.markAsRead(id);
+      expect(console.log).toHaveBeenCalledWith(
+        `Notification ${id} has been marked as read`
+      );
     });
   });
 });
