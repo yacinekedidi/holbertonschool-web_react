@@ -27,7 +27,7 @@ describe("TEST SUIT 1", () => {
     const wrapper = shallow(
       <NotificationItem type="default" html={{ __html: "<u>test</u>" }} />
     );
-    expect(wrapper.prop("dangerouslySetInnerHTML")).toEqual({
+    expect(wrapper.find("li").prop("dangerouslySetInnerHTML")).toEqual({
       __html: "<u>test</u>",
     });
   });
