@@ -120,7 +120,7 @@ Notifications.propTypes = {
 };
 
 Notifications.defaultProps = {
-  displayDrawer: true, //  TEMPORARY TRUE
+  displayDrawer: false,
   listNotifications: [],
 };
 
