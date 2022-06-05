@@ -11,5 +11,5 @@ console.log(concatElements([1, 2], [3, 4]));
 export function mergeElements(page1, page2) {
   const p1M = Map(page1);
   const p2M = Map(page2);
-  return List(p1M.merge(p2M));
+  return p1M.merge(p2M);
 }
