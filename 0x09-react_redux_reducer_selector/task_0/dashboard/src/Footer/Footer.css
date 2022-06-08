@@ -1,0 +1,10 @@
+:root {
+  --main-color: crimson;
+}
+
+.App-footer {
+  width: 100%;
+  border-top: 3px solid var(--main-color);
+  text-align: center;
+  font-style: italic;
+}
