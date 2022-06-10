@@ -1,7 +1,6 @@
 /* eslint-disable no-multi-str */
 import courseReducer, { initialState } from "./courseReducer";
 import { selectCourse, unSelectCourse } from "../actions/courseActionCreators";
-import { Map } from "immutable";
 
 describe("TEST SUIT", () => {
   it("TEST CASE 1: Test that the default state returns an empty array", () => {
