@@ -1,4 +1,4 @@
-import { Map, List } from "immutable";
+import { List, Map } from 'immutable';
 
 export function concatElements(page1, page2) {
   const p1L = List(page1);
